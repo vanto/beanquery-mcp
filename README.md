@@ -15,6 +15,26 @@ A generated sample ledger can be found in [sample.bean](sample.bean)
   - `beanquery://tables`: Get a list of tables that BQL can access.
   - `beanquery://accounts`: Get a list of accounts in the loaded Beancount file.
 
+## Example using Claude.ai
+
+![screenshot](docs/screenshot.png)
+
+For a screenshot with expanded MCP interactions, see [here](docs/screenshot-expanded.png).
+
+## ⚠️ Privacy Warning
+This tool interfaces with language model providers (LLMs) via the Model Context Protocol (MCP), and as such may transmit parts of your Beancount ledger—including potentially confidential or private financial information—to third-party services.
+
+Please use this tool with caution, especially when:
+- Your ledger contains sensitive data (e.g., client names, salary details, health-related expenses).
+- You are using a cloud-hosted or non-self-hosted LLM backend.
+
+Recommendations:
+- Mask or redact sensitive data in test ledgers.
+- Use self-hosted LLMs when possible.
+- Review the data being sent via MCP to ensure compliance with your privacy and security requirements.
+
+🛑 You are responsible for the protection of your financial data. Do not share ledgers you would not be comfortable exposing.
+
 ## Setup
 
 ### Prerequisites
