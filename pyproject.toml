@@ -1,0 +1,28 @@
+[project]
+name = "beanquery-mcp"
+version = "0.1.0"
+description = "The Beancount MCP Server is an experimental implementation that utilizes the Model Context Protocol (MCP) to enable AI assistants to query and analyze Beancount ledger files using Beancount Query Language (BQL) and the beanquery tool."
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "beancount>=3.1.0",
+    "beanquery>=0.2.0",
+    "mcp[cli]>=1.5.0",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=8.3.5",
+    "ruff>=0.8.5",
+]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP"]
+ignore = []
+
+[tool.ruff]
+line-length = 88
+target-version = "py310"
+
+[tool.pytest.ini_options]
+xfail_strict = true
