@@ -57,16 +57,19 @@ Recommendations:
    ```bash
    mcp install server.py
    ```
-
+   - **Quick Start**:
+     ```bash
+     uv run mcp install server.py -v BEANCOUNT_LEDGER=$(pwd)/sample.bean --with beancount --with beanquery
+     ```
    - **Custom Name**:
      ```bash
-     mcp install server.py --name "Beanquery MCP Server"
+     uv run mcp install server.py --name "Beanquery MCP Server" --with beancount --with beanquery
      ```
 
    - **Environment Variables**:
      ```bash
-     mcp install server.py -v BEANCOUNT_LEDGER=/path/to/your/ledger.bean
-     mcp install server.py -f .env
+     uv run mcp install server.py -v BEANCOUNT_LEDGER=/path/to/your/ledger.bean --with beancount --with beanquery
+     uv run mcp install server.py -f .env --with beancount --with beanquery
      ```
 
 ## Testing
