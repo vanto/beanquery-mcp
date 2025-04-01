@@ -33,7 +33,8 @@ Recommendations:
 - Use self-hosted LLMs when possible.
 - Review the data being sent via MCP to ensure compliance with your privacy and security requirements.
 
-🛑 You are responsible for the protection of your financial data. Do not share ledgers you would not be comfortable exposing.
+> [!CAUTION]
+> You are responsible for the protection of your financial data. Do not share ledgers you would not be comfortable exposing.
 
 ## Setup
 
