@@ -1,3 +1,5 @@
+[![MseeP.ai Security Assessment Badge](https://mseep.net/pr/vanto-beanquery-mcp-badge.png)](https://mseep.ai/app/vanto-beanquery-mcp)
+
 # Beanquery MCP
 
 The Beancount MCP Server is an experimental implementation of the [Model Context Protocol (MCP)](https://github.com/modelcontextprotocol) designed to interface with [Beancount](https://beancount.github.io/) ledger files. Leveraging the [Beancount Query Language (BQL)](https://beancount.github.io/docs/beancount_query_language.html) and the [beanquery](https://github.com/beancount/beanquery) tool, this server enables seamless querying and analysis of financial data stored in Beancount format. By integrating MCP, the server facilitates standardized communication between AI assistants and Beancount ledgers, enhancing the accessibility and utility of financial data.
